@@ -1,0 +1,36 @@
+notes on isValidTriangle
+
+so in class, Jesse basically showed us the methodology behind 
+solving the problem
+
+triangles depend on three conditions, given 3 side lengths a,b,class 
+    a+b>c
+    b+c>a
+    c+a>b
+
+didn't copy and paste my trial codes like i normally do but
+worked on this for like 30min
+    went into it thinking it would be a quick plug and chug
+    with the different conditions set as if statements
+
+    kept running into error messages
+
+    realized that i would need to set up conditionals
+    depending on which side length is the largest in the set
+
+    ended up with like 10 branches and still getting error messages
+
+went and looked at other people's code! Will, specifically
+    shocked by how simple it was
+    messaged him on Slack to see if he could explain this bit:
+        let [x,y,z] = [a,b,c].sort();
+
+        return z < x + y;
+
+got an explanation, he walked me through how he got there and the
+feedback Jesse had given him
+    very similar to my original code of 10 branches and a ton 
+    of conditionals
+
+voila! code. 
+
